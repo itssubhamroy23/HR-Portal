@@ -1,0 +1,77 @@
+/* Sidebar container */
+.sidebar-container {
+  width: 18rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo {
+  height: 2rem;
+  width: 2rem;
+  color: #4f46e5;
+}
+
+.sidebar-title {
+  font-size: 1.10rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.sidebar-nav {
+  margin-top: 1.5rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.110rem;
+  color: #000000;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; /* Ensures no underline for Link */
+  color: inherit; /* Ensures color inherits from parent */
+}
+
+.sidebar-item:hover {
+  background-color: #efeff0; /* Light grey on hover */
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Active Tab */
+.sidebar-item.active {
+  background-color: #EEF2FF; /* Light grey background */
+  color: #1D2A60;            /* Purple text */
+  border-right: 4px solid #1D2A60; /* Purple bar on the side */
+}
+
+.sidebar-icon {
+  height: 1.50rem;
+  width: 1.50rem;
+  margin-right: 0.75rem;
+}
+
+.sidebar-footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #000000;
+  padding: 1rem;
+  padding-bottom: 90px;
+}

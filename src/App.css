@@ -1,0 +1,9 @@
+/* General app-wide styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
