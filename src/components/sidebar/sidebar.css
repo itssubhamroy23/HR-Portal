@@ -46,26 +46,73 @@
   background: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none; /* Ensures no underline for Link */
-  color: inherit; /* Ensures color inherits from parent */
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar-item:hover {
-  background-color: #efeff0; /* Light grey on hover */
-  text-decoration: none; /* Ensures no underline on hover */
+  background-color: #efeff0;
 }
 
 /* Active Tab */
 .sidebar-item.active {
-  background-color: #EEF2FF; /* Light grey background */
-  color: #1D2A60;            /* Purple text */
-  border-right: 4px solid #1D2A60; /* Purple bar on the side */
+  background-color: #EEF2FF;
+  color: #1D2A60;
+  border-right: 4px solid #1D2A60;
 }
 
+/* Ensures all links behave like buttons */
+.sidebar-item, 
+.sidebar-item a, 
+.submenu-item {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Sidebar icon */
 .sidebar-icon {
   height: 1.50rem;
   width: 1.50rem;
   margin-right: 0.75rem;
+}
+
+/* Submenu styles */
+.submenu {
+  background-color: #ffffff;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.110rem;
+  color: #000000;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.submenu-item:hover {
+  background-color: #efeff0;
+}
+
+.submenu-item.active {
+  background-color: #EEF2FF;
+  color: #1D2A60;
+  border-right: 4px solid #1D2A60;
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
 }
 
 .sidebar-footer {

@@ -11,6 +11,8 @@ import EmployeeLayout from './Pages/Employee/EmployeeLayout/EmployeeLayout';
 import PersonalDetails from './Pages/Employee/PersonalDetails/PersonalDetails';
 import EmploymentDetails from './Pages/Employee/EmployementDetails/EmployementDetails';
 import BankDetails from './Pages/Employee/BankDetails/BankDetails';
+import LeaveHistory from './Pages/LeaveManagement/LeaveHistory/LeaveHistory';
+import LeavePolicy from './Pages/LeaveManagement/LeavePolicy/LeavePolicy';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/leave-management" element={<LeaveManagement />} />
+          <Route path="/leave-management/leave-history" element={<LeaveHistory />} />
+          <Route path="/leave-management/leave-policy" element={<LeavePolicy />} />
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/training" element={<Training />} />
           <Route path="/certification" element={<Certification />} />

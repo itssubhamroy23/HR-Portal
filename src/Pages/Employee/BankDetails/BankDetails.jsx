@@ -1,12 +1,12 @@
 import React from "react";
-import "./BankDetails.css"; // Ensure correct path
+import "./BankDetails.css"; 
 
 const BankDetails = () => {
-    // Dummy data for now, replace with actual data later
+    // Dummy data for now, will replace it with actual data later
     const bankFormData = {
-        accountHolderName: "John Doe",
+        accountHolderName: "Subham Roy",
         bankName: "State Bank of India",
-        accountNumber: "1234567890123456",
+        accountNumber: "1234567XXXXXXX",
         ifscCode: "SBIN0001234",
         accountStatus: "Active",
     };

@@ -1,22 +1,22 @@
 import React from "react";
-import "./EmployementDetails.css"; // Ensure correct path
+import "./EmployementDetails.css"; 
 
 const EmploymentDetails = () => {
-    // Dummy data for now
+    // Dummy data for now, will add reall data
     const formData = {
-        name: "John Doe",
-        gender: "Male",
-        location: "Bengaluru",
-        dateOfBirth: "1990-01-01",
-        bloodGroup: "O+",
-        email: "john.doe@example.com",
-        phone: "9876543210",
-        alternatePhone: "9876543211",
-        currentAddress: "123 Street, Bengaluru",
-        permanentAddress: "456 Avenue, Bengaluru",
-        maritalStatus: "Married",
-        aadhaar: "123456789012",
-        pan: "ABCDE1234F",
+        name: "Subham Roy",
+        employeeId: "GAL0005",
+        jobTitle: "Analyst",
+        department: "Technical",
+        lineManager: "Dino Singha",
+        location: "Silchar",
+        email: "subham.roy@galvinus.in",
+        dateOfJoining: "23/11/2023",
+        employementType: "Permanent",
+        uan: "62456178",
+        pf: "13385743296",
+        esic: "123456789012",
+     
     };
 
     return (
@@ -31,67 +31,67 @@ const EmploymentDetails = () => {
 
                 {/* Gender */}
                 <div className="employment-details-item">
-                    <label>Gender:</label>
-                    <p>{formData.gender}</p>
+                    <label>Employee ID:</label>
+                    <p>{formData.employeeId}</p>
                 </div>
 
                 {/* Location */}
+                <div className="employment-details-item">
+                    <label>Job Title:</label>
+                    <p>{formData.jobTitle}</p>
+                </div>
+
+                {/* Date of Birth */}
+                <div className="employment-details-item">
+                    <label>Line Manager:</label>
+                    <p>{formData.lineManager}</p>
+                </div>
+
+                {/* Blood Group */}
                 <div className="employment-details-item">
                     <label>Location:</label>
                     <p>{formData.location}</p>
                 </div>
 
-                {/* Date of Birth */}
-                <div className="employment-details-item">
-                    <label>Date of Birth:</label>
-                    <p>{formData.dateOfBirth}</p>
-                </div>
-
-                {/* Blood Group */}
-                <div className="employment-details-item">
-                    <label>Blood Group:</label>
-                    <p>{formData.bloodGroup}</p>
-                </div>
-
                 {/* Email */}
                 <div className="employment-details-item">
-                    <label>Personal Email ID:</label>
+                    <label>Office Email ID:</label>
                     <p>{formData.email}</p>
                 </div>
 
                 {/* Phone */}
                 <div className="employment-details-item">
-                    <label>Phone Number:</label>
-                    <p>{formData.phone}</p>
+                    <label>Date of Joining:</label>
+                    <p>{formData.dateOfJoining}</p>
                 </div>
 
                 {/* Alternate Phone */}
                 <div className="employment-details-item">
-                    <label>Alternate Phone:</label>
-                    <p>{formData.alternatePhone}</p>
+                    <label>Employement Type:</label>
+                    <p>{formData.employementType}</p>
                 </div>
 
                 {/* Marital Status */}
                 <div className="employment-details-item">
-                    <label>Marital Status:</label>
-                    <p>{formData.maritalStatus}</p>
+                    <label>UAN:</label>
+                    <p>{formData.uan}</p>
                 </div>
 
                 {/* Aadhaar */}
                 <div className="employment-details-item">
-                    <label>Aadhaar Number:</label>
-                    <p>{formData.aadhaar}</p>
+                    <label>PF Account Number:</label>
+                    <p>{formData.pf}</p>
                 </div>
 
                 {/* PAN */}
                 <div className="employment-details-item">
-                    <label>PAN Number:</label>
-                    <p>{formData.pan}</p>
+                    <label>ESIC Number:</label>
+                    <p>{formData.esic}</p>
                 </div>
             </div>
 
-            {/* Addresses */}
-            <div className="employment-details-grid">
+         
+            {/* <div className="employment-details-grid">
                 <div className="employment-details-item">
                     <label>Current Address:</label>
                     <p>{formData.currentAddress}</p>
@@ -100,7 +100,7 @@ const EmploymentDetails = () => {
                     <label>Permanent Address:</label>
                     <p>{formData.permanentAddress}</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

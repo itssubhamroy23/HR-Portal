@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Upload, Calendar } from 'lucide-react'; // Corrected the icon import
-import './LeaveManagement.css'; // Import the CSS file
+import './LeaveManagement.css'; 
 
 export default function Leave() {
     const [leaveType, setLeaveType] = useState('annual');
