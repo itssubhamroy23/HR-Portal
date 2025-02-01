@@ -6,11 +6,20 @@ import { Link, useLocation } from 'react-router-dom';
 const Sidebar = () => {
   const location = useLocation(); // Get current route
   const [activeTab, setActiveTab] = useState(location.pathname);
-  const [leaveOpen, setLeaveOpen] = useState(location.pathname.startsWith('/leave-management')); // Keep submenu open if inside leave management
+  const [leaveOpen, setLeaveOpen] = useState(location.pathname.startsWith('/leave-management'));
+  const [attendanceOpen, setAttendanceOpen] = useState(location.pathname.startsWith('/attendance'));
 
   const navigation = [
     { name: 'Dashboard', icon: BarChart3, path: '/' },
-    { name: 'Attendance', icon: Clock, path: '/attendance' },
+    { 
+      name: 'Attendance', 
+      icon: Clock, 
+      path: '/attendance',
+      subMenu: [
+        { name: 'Attendance Tracker', path: '/attendance/tracker' },
+        { name: 'Attendance Dashboard', path: '/attendance/dashboard' }
+      ]
+    },
     { name: 'Employee Database', icon: Users, path: '/employee/personal' },
     { 
       name: 'Leave Management', 
@@ -35,15 +44,18 @@ const Sidebar = () => {
               <>
                 <div 
                   className={`sidebar-item ${activeTab.startsWith(item.path) ? 'active' : ''}`} 
-                  onClick={() => setLeaveOpen(!leaveOpen)}
+                  onClick={() => {
+                    if (item.name === 'Leave Management') setLeaveOpen(!leaveOpen);
+                    if (item.name === 'Attendance') setAttendanceOpen(!attendanceOpen);
+                  }}
                 >
                   <item.icon className="sidebar-icon" />
                   <Link to={item.path} className="sidebar-link" onClick={() => setActiveTab(item.path)}>
                     {item.name}
                   </Link>
-                  <ChevronDown className={`dropdown-icon ${leaveOpen ? 'open' : ''}`} />
+                  <ChevronDown className={`dropdown-icon ${(item.name === 'Leave Management' && leaveOpen) || (item.name === 'Attendance' && attendanceOpen) ? 'open' : ''}`} />
                 </div>
-                {leaveOpen && (
+                {((item.name === 'Leave Management' && leaveOpen) || (item.name === 'Attendance' && attendanceOpen)) && (
                   <div className="submenu">
                     {item.subMenu.map((sub) => (
                       <Link 

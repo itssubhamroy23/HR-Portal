@@ -55,7 +55,8 @@
 }
 
 /* Active Tab */
-.sidebar-item.active {
+.sidebar-item.active,
+.submenu-item.active {
   background-color: #EEF2FF;
   color: #1D2A60;
   border-right: 4px solid #1D2A60;
@@ -82,13 +83,14 @@
 /* Submenu styles */
 .submenu {
   background-color: #ffffff;
+  padding-left: 1.5rem;
 }
 
 .submenu-item {
   display: flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  font-size: 1.110rem;
+  font-size: 1.05rem;
   color: #000000;
   width: 100%;
   cursor: pointer;
@@ -121,4 +123,32 @@
   color: #000000;
   padding: 1rem;
   padding-bottom: 90px;
+}
+
+/* Attendance Tracker Styles */
+.attendance-tracker {
+  background-color: #F9FAFB;
+  color: #1F2937;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.attendance-tracker:hover {
+  background-color: #E5E7EB;
+  border-left: 4px solid #4f46e5;
+}
+
+/* Attendance Dashboard Styles */
+.attendance-dashboard {
+  background-color: #F3F4F6;
+  color: #111827;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.attendance-dashboard:hover {
+  background-color: #E0E7FF;
+  border-left: 4px solid #4f46e5;
 }

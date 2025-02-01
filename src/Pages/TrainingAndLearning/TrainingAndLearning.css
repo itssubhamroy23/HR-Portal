@@ -1,0 +1,67 @@
+/* Unique CSS for Training component to avoid conflict */
+
+.training-container {
+    padding: 1.5rem;
+    space-y: 1.5rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black; 
+  }
+  
+  .subtitle {
+    color: #4b5563;
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1 1 calc(33.333% - 1.5rem);
+    max-width: calc(33.333% - 1.5rem);
+  }
+  
+  .stat-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563; /* Gray 600 */
+  }
+  
+  .stat-number {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937; /* Gray 900 */
+  }
+  
+  .stat-icon {
+    padding: 0.75rem;
+    background-color: #eff6ff; /* Blue 50 */
+    border-radius: 0.75rem;
+    margin-right: 470px;
+  }
+  

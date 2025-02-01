@@ -13,6 +13,9 @@ import EmploymentDetails from './Pages/Employee/EmployementDetails/EmployementDe
 import BankDetails from './Pages/Employee/BankDetails/BankDetails';
 import LeaveHistory from './Pages/LeaveManagement/LeaveHistory/LeaveHistory';
 import LeavePolicy from './Pages/LeaveManagement/LeavePolicy/LeavePolicy';
+import AttendanceTracker from './Pages/Attendance/AttendanceTracker/AttendanceTracker';
+import AttendanceDashboard from './Pages/Attendance/AttendanceDashboard/AttendanceDashboard'
+
 
 
 function App() {
@@ -24,7 +27,10 @@ function App() {
           <Route path="/leave-management" element={<LeaveManagement />} />
           <Route path="/leave-management/leave-history" element={<LeaveHistory />} />
           <Route path="/leave-management/leave-policy" element={<LeavePolicy />} />
-          <Route path="/attendance" element={<Attendance />} />
+          <Route path="/attendance" element={<Attendance />}>
+            <Route path="tracker" element={<AttendanceTracker />} />
+            <Route path="dashboard" element={<AttendanceDashboard />} />
+          </Route>
           <Route path="/training" element={<Training />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/settings" element={<Settings />} />
@@ -36,7 +42,7 @@ function App() {
 
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 

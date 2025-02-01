@@ -94,11 +94,11 @@ export default function Dashboard() {
 
         <div className="checkin-stats">
           <div className="checkin-stat">
-            <p className="stat-label">Work Timer</p>
+            <p className="stats-label">Work Timer</p>
             <p className="stat-value">{workTimer}</p>
           </div>
           <div className="checkin-stat">
-            <p className="stat-label">Check In Time</p>
+            <p className="stats-label">Check In Time</p>
             <p className="stat-value">
               {checkInTime
                 ? new Date(checkInTime).toLocaleTimeString('en-US', {
@@ -109,7 +109,7 @@ export default function Dashboard() {
             </p>
           </div>
           <div className="checkin-stat">
-            <p className="stat-label">Status</p>
+            <p className="stats-label">Status</p>
             <p className="stat-value">{isCheckedIn ? 'Working' : 'Not Working'}</p>
           </div>
         </div>

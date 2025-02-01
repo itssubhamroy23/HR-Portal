@@ -1,6 +1,5 @@
 
 .leave-policy-container {
-    /* padding: 2rem; */
     padding-left: 30px;
     padding-top: 20px;
     margin-right: 50px;
@@ -133,7 +132,6 @@
   .quick-reference-subtitle {
     font-weight: 600;
     color: #1f2937;
-    
   }
   
   .quick-reference-details {

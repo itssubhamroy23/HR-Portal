@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const Attendance = () => {
   return (
-   <h1>This is the Attendance Page</h1>
-  )
-}
+    <div>
+      
+      <Outlet />  {/* This will render the nested routes */}
+    </div>
+  );
+};
 
-export default Attendance
+export default Attendance;
