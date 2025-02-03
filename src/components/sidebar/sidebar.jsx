@@ -32,7 +32,7 @@ const Sidebar = () => {
     },
     { name: 'Training and Learning', icon: GraduationCap, path: '/training' },
     { name: 'Certification and Badges', icon: Award, path: '/certification' },
-    { name: 'Settings', icon: Settings, path: '/settings' },
+    // { name: 'Settings', icon: Settings, path: '/settings' },
   ];
 
   return (
