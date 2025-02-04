@@ -15,10 +15,10 @@ export default function Attendance() {
     },
     {
       path: '/attendance/dashboard',
-      label: 'Dashboard',
+      label: 'Attendance Dashboard',
       icon: LayoutDashboard,
     },
-    
+
   ];
 
   return (

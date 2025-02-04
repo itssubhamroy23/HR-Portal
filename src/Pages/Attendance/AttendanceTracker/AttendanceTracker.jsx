@@ -69,10 +69,10 @@ export default function AttendanceTracker() {
             <ChevronRight className="attendance-tracker-icon" />
           </button>
         </div>
-        <button className="attendance-tracker-download-btn" onClick={handleDownloadReport}>
+        {/* <button className="attendance-tracker-download-btn" onClick={handleDownloadReport}>
           <Download className="attendance-tracker-download-icon" />
           Download Report
-        </button>
+        </button> */}
       </div>
 
       <div className="attendance-tracker-table-wrapper">

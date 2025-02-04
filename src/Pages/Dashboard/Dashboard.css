@@ -6,7 +6,6 @@
   width: 100%;
 }
 
-
 /* Welcome Section */
 .welcome-section {
   display: flex;
@@ -22,6 +21,7 @@
 
 .welcome-subtitle {
   color: #6b7280;
+  margin-top: 5px;
 }
 
 .current-time {
@@ -52,7 +52,7 @@
 
 /* Check In/Out Section */
 .checkin-section {
-  background: linear-gradient(to right, #6365F1, #9334EA);
+  background: linear-gradient(to right, #6365f1, #9334ea);
   border-radius: 1.5rem;
   padding: 2.5rem;
   color: white;
@@ -167,15 +167,17 @@
 }
 
 .quick-stat-card:nth-child(1) {
-  background-color: #F0FDF4; /* Light Green */
+  background-color: #f0fdf4;
+  margin-right: 20px;
 }
 
 .quick-stat-card:nth-child(2) {
-  background-color: #FAF5FF; /* Light Purple */
+  background-color: #faf5ff;
+  margin-right: 20px;
 }
 
 .quick-stat-card:nth-child(3) {
-  background-color: #FFF7ED; /* Light Peach */
+  background-color: #fff7ed;
 }
 
 .quick-stat-icon {
@@ -204,18 +206,14 @@
   margin-top: 10px;
 }
 
-
 /* Main Content Grid */
 .main-content-grid {
-
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  
 }
 
 .notifications {
-  
   background-color: #ffffff;
   height: 600px;
   padding: 1.5rem;
@@ -224,19 +222,18 @@
 }
 
 .notification-card {
-  
   display: flex;
   align-items: center;
   padding: 20px;
   margin-top: 18px;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   border-radius: 0.73rem;
   margin-bottom: 1rem;
-  
+
   cursor: pointer;
 }
 
-.notification-card:hover{
+.notification-card:hover {
   background-color: rgba(231, 231, 231, 0.959);
 }
 
@@ -279,10 +276,9 @@
   border-radius: 0.75rem;
   margin-bottom: 1rem;
   cursor: pointer;
-  
 }
 
-.quick-action:hover{
+.quick-action:hover {
   background-color: rgba(231, 231, 231, 0.959);
 }
 
@@ -297,9 +293,3 @@
   font-size: 1.25rem;
   color: #4f46e5;
 }
-
-
-
-
-
-

@@ -11,9 +11,9 @@ const Sidebar = () => {
 
   const navigation = [
     { name: 'Dashboard', icon: BarChart3, path: '/' },
-    { 
-      name: 'Attendance', 
-      icon: Clock, 
+    {
+      name: 'Attendance',
+      icon: Clock,
       path: '/attendance',
       subMenu: [
         { name: 'Attendance Tracker', path: '/attendance/tracker' },
@@ -21,14 +21,14 @@ const Sidebar = () => {
       ]
     },
     { name: 'Employee Database', icon: Users, path: '/employee/personal' },
-    { 
-      name: 'Leave Management', 
-      icon: Calendar, 
-      path: '/leave-management', 
+    {
+      name: 'Leave Management',
+      icon: Calendar,
+      path: '/leave-management',
       subMenu: [
         { name: 'Leave History', path: '/leave-management/leave-history' },
         { name: 'Leave Policy', path: '/leave-management/leave-policy' }
-      ] 
+      ]
     },
     { name: 'Training and Learning', icon: GraduationCap, path: '/training' },
     { name: 'Certification and Badges', icon: Award, path: '/certification' },
@@ -42,8 +42,8 @@ const Sidebar = () => {
           <div key={item.path}>
             {item.subMenu ? (
               <>
-                <div 
-                  className={`sidebar-item ${activeTab.startsWith(item.path) ? 'active' : ''}`} 
+                <div
+                  className={`sidebar-item ${activeTab.startsWith(item.path) ? 'active' : ''}`}
                   onClick={() => {
                     if (item.name === 'Leave Management') setLeaveOpen(!leaveOpen);
                     if (item.name === 'Attendance') setAttendanceOpen(!attendanceOpen);
@@ -58,10 +58,10 @@ const Sidebar = () => {
                 {((item.name === 'Leave Management' && leaveOpen) || (item.name === 'Attendance' && attendanceOpen)) && (
                   <div className="submenu">
                     {item.subMenu.map((sub) => (
-                      <Link 
-                        key={sub.path} 
-                        to={sub.path} 
-                        className={`submenu-item ${activeTab === sub.path ? 'active' : ''}`} 
+                      <Link
+                        key={sub.path}
+                        to={sub.path}
+                        className={`submenu-item ${activeTab === sub.path ? 'active' : ''}`}
                         onClick={() => setActiveTab(sub.path)}
                       >
                         {sub.name}
@@ -71,9 +71,9 @@ const Sidebar = () => {
                 )}
               </>
             ) : (
-              <Link 
-                to={item.path} 
-                onClick={() => setActiveTab(item.path)} 
+              <Link
+                to={item.path}
+                onClick={() => setActiveTab(item.path)}
                 className={`sidebar-item ${activeTab === item.path ? 'active' : ''}`}
               >
                 <item.icon className="sidebar-icon" />
@@ -85,7 +85,7 @@ const Sidebar = () => {
       </nav>
 
       <footer className="sidebar-footer">
-        Designed and developed by <b>Galvinus India Pvt Ltd</b>
+        Designed and developed by <b>Galvinus Pvt Ltd</b>
       </footer>
     </div>
   );

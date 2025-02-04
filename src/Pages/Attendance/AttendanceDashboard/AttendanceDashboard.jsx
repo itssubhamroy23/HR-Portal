@@ -172,7 +172,7 @@ const AttendanceDashboard = () => {
   return (
     <div className="attendance-dashboard-container">
       <div className="attendance-dashboard-header">
-        <h2>Attendance Dashboard</h2>
+        {/* <h3>Attendance Dashboard</h3> */}
       </div>
 
       <div className="attendance-dashboard-stats">
