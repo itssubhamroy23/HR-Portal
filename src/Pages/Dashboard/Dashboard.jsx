@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, CheckCircle, XCircle, Timer, Calendar, Users, Building, Bell, Briefcase, ArrowRight } from 'lucide-react';
-import './dashboard.css';
+import './Dashboard.css';
 
 export default function Dashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
