@@ -15,6 +15,9 @@ import LeaveHistory from './Pages/LeaveManagement/LeaveHistory/LeaveHistory';
 import LeavePolicy from './Pages/LeaveManagement/LeavePolicy/LeavePolicy';
 
 
+
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +28,8 @@ function App() {
           <Route path="/leave-management/leave-history" element={<LeaveHistory />} />
           <Route path="/leave-management/leave-policy" element={<LeavePolicy />} />
           <Route path="/attendance" element={<Attendance />} />
+         
+         
           <Route path="/training" element={<Training />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/settings" element={<Settings />} />
