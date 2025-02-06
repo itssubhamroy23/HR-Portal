@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Upload, Calendar } from 'lucide-react';
+import './RequestLeave.css'
+
 
 export default function Leave() {
     const [leaveType, setLeaveType] = useState('annual');

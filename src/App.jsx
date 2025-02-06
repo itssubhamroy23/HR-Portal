@@ -13,8 +13,13 @@ import EmploymentDetails from './Pages/Employee/EmployementDetails/EmployementDe
 import BankDetails from './Pages/Employee/BankDetails/BankDetails';
 import LeaveHistory from './Pages/LeaveManagement/LeaveHistory/LeaveHistory';
 import LeavePolicy from './Pages/LeaveManagement/LeavePolicy/LeavePolicy';
+import RequestLeave from './Pages/LeaveManagement/RequestLeave/RequestLeave'
 import AttendanceTracker from './Pages/Attendance/AttendanceTracker/AttendanceTracker';
-import AttendanceDashboard from './Pages/Attendance/AttendanceDashboard/AttendanceDashboard'
+import AttendanceDashboard from './Pages/Attendance/AttendanceDashboard/AttendanceDashboard';
+import TrainingDetails from './Pages/TrainingAndLearning/TrainingDetails/TrainingDetails';
+import AddBankDetails from './Pages/Test/BankDetails';
+
+
 
 
 
@@ -25,6 +30,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/leave-management" element={<LeaveManagement />} />
+          <Route path="/demo" element={<AddBankDetails />} />
+          <Route path="/leave-management/request-leave" element={<RequestLeave />} />
           <Route path="/leave-management/leave-history" element={<LeaveHistory />} />
           <Route path="/leave-management/leave-policy" element={<LeavePolicy />} />
           <Route path="/attendance" element={<Attendance />}>
@@ -32,6 +39,7 @@ function App() {
             <Route path="dashboard" element={<AttendanceDashboard />} />
           </Route>
           <Route path="/training" element={<Training />} />
+          <Route path="/training/:id" element={<TrainingDetails />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/employee" element={<EmployeeLayout />}>

@@ -26,6 +26,7 @@ const Sidebar = () => {
       icon: Calendar,
       path: '/leave-management',
       subMenu: [
+        { name: 'Request Leave', path: '/leave-management/request-leave' },
         { name: 'Leave History', path: '/leave-management/leave-history' },
         { name: 'Leave Policy', path: '/leave-management/leave-policy' }
       ]
