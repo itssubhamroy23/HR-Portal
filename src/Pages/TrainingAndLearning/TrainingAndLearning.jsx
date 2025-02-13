@@ -11,8 +11,8 @@ export default function TrainingAndLearning() {
     {
       id: '1',
       name: 'React Best Practices and Advanced Patterns',
-      trainer: 'Dino Singha',
-      mode: 'Online',
+      trainer: 'Team Lead',
+      // mode: 'Online',
       startDate: '2024-03-15',
       endDate: '2024-04-15',
       duration: '30 days',
@@ -24,8 +24,8 @@ export default function TrainingAndLearning() {
     {
       id: '2',
       name: 'Cloud Architecture Fundamentals',
-      trainer: 'Dino Singha',
-      mode: 'Online',
+      trainer: 'Team Lead',
+      // mode: 'Online',
       startDate: '2024-03-20',
       endDate: '2024-04-20',
       duration: '30 days',
@@ -37,8 +37,8 @@ export default function TrainingAndLearning() {
     {
       id: '3',
       name: 'Agile Development Workshop',
-      trainer: 'Harsha Shetty',
-      mode: 'Online',
+      trainer: 'Team Lead',
+      // mode: 'Online',
       startDate: '2024-02-01',
       endDate: '2024-02-28',
       duration: '28 days',

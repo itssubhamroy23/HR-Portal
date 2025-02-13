@@ -12,6 +12,7 @@ export default function PersonalDetails() {
         email: "",
         phone: "",
         alternatePhone: "",
+        emergencyContact: "",
         currentAddress: "",
         permanentAddress: "",
         maritalStatus: "",
@@ -38,6 +39,10 @@ export default function PersonalDetails() {
         if (formData.alternatePhone && !/^\d{10}$/.test(formData.alternatePhone)) {
             newErrors.alternatePhone = "Alternate phone number must be 10 digits";
         }
+        if (formData.emergencyContact && !/^\d{10}$/.test(formData.emergencyContact)) {
+            newErrors.emergencyContact = "Emergency phone number must be 10 digits";
+        }
+
         if (formData.aadhaar && !/^\d{12}$/.test(formData.aadhaar)) {
             newErrors.aadhaar = "Aadhaar number must be 12 digits";
         }
@@ -145,6 +150,13 @@ export default function PersonalDetails() {
                     <label>Alternate Contact Details</label>
                     <input type="tel" name="alternatePhone" value={formData.alternatePhone} onChange={handleChange} />
                     {errors.alternatePhone && <p className="error">{errors.alternatePhone}</p>}
+                </div>
+
+                {/*Emergency Contact*/}
+                <div>
+                    <label>Emergency Contact</label>
+                    <input type="tel" name='emergencyContact' value={formData.emergencyContact} onChange={handleChange} />
+                    {errors.emergencyContact && <p classname='error'>{errors.emergencyContact}</p>}
                 </div>
 
                 {/* Marital Status */}

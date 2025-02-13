@@ -18,6 +18,7 @@ import AttendanceTracker from './Pages/Attendance/AttendanceTracker/AttendanceTr
 import AttendanceDashboard from './Pages/Attendance/AttendanceDashboard/AttendanceDashboard';
 import TrainingDetails from './Pages/TrainingAndLearning/TrainingDetails/TrainingDetails';
 import AddBankDetails from './Pages/Test/BankDetails';
+import Auth from './Pages/Auth/Auth';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/leave-management" element={<LeaveManagement />} />
           <Route path="/demo" element={<AddBankDetails />} />
           <Route path="/leave-management/request-leave" element={<RequestLeave />} />
