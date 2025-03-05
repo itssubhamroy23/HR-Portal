@@ -32,9 +32,9 @@ export default function Leave() {
                                     onChange={(e) => setLeaveType(e.target.value)}
                                     className="input-field"
                                 >
-                                    <option value="annual">Annual Leave</option>
+                                    <option value="annual">Casual Leave</option>
                                     <option value="sick">Sick Leave</option>
-                                    <option value="personal">Personal Leave</option>
+                                    <option value="personal">Comp Off Leave</option>
                                 </select>
                             </div>
 
@@ -93,7 +93,7 @@ export default function Leave() {
                         <h2 className="section-title">Leave Balance</h2>
                         <div className="leave-item">
                             <div>
-                                <p className="leave-type">Annual Leave</p>
+                                <p className="leave-type">Casual Leave</p>
                                 <p className="leave-detail">Expires Dec 31, 2025</p>
                             </div>
                             <span className="leave-days">15 days</span>
@@ -107,8 +107,8 @@ export default function Leave() {
                         </div>
                         <div className="leave-item">
                             <div>
-                                <p className="leave-type">Personal Leave</p>
-                                <p className="leave-detail">Yearly allocation</p>
+                                <p className="leave-type">Comp Off Leave</p>
+                                <p className="leave-detail">Accrued based</p>
                             </div>
                             <span className="leave-days">5 days</span>
                         </div>
@@ -119,7 +119,7 @@ export default function Leave() {
                         {[...Array(3)].map((_, i) => (
                             <div key={i} className="request-item">
                                 <div>
-                                    <p className="request-type">Annual Leave</p>
+                                    <p className="request-type">Casual Leave</p>
                                     <p className="request-dates">Mar 15 - Mar 17, 2025</p>
                                 </div>
                                 <span className={`status ${i === 0 ? 'pending' : i === 1 ? 'approved' : 'rejected'}`}>
